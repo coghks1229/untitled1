@@ -44,17 +44,7 @@ class DBModule:
         else:
             return False
 
-    # def write_post(self, title, contents, uid, file):
-    #     pid = str(uuid.uuid4())[:12]
-    #     posting_time = str(datetime.now())[:19]
-    #     information = {
-    #         "title": title,
-    #         "contents": contents,
-    #         "uid": uid,
-    #         "time": posting_time,
-    #     }
-    #     self.db.child("posts").child(pid).set(information)
-    #     self.storage.child(pid).put(file)
+
 
     def write_post(self, title, contents, uid, file):
         pid = str(uuid.uuid4())[:12]
@@ -78,15 +68,6 @@ class DBModule:
         self.db.child("posts").child(pid).update(changed_info)
         self.storage.child(pid).put(file)
 
-    # def write_post(self, title, contents,  uid):
-    #     pid = str(uuid.uuid4())[:12]
-    #     information = {
-    #         "title": title,
-    #         "contents": contents,
-    #
-    #         "uid": uid
-    #     }
-    #     self.db.child("posts").child(pid).set(information)
 
     def post_list(self):
         post_lists = self.db.child("posts").get().val()

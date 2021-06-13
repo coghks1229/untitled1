@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6559d33-59f6-432d-bb25-5f5571ca6690" name="Default Changelist" comment="" />
+    <list default="true" id="e6559d33-59f6-432d-bb25-5f5571ca6690" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/course-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/course-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/course-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/course-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/course-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/course-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/event-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/event-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/event-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/event-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/event-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/event-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/person_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/testing_img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,19 +56,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1tnO9XGQL0ydrlV6vuAx7p57MMh" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../꺅완성/untitled1" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PycharmProjects\untitled1" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\untitled1\static\images" />
       <recent name="C:\Users\user\PycharmProjects\untitled1\static" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\untitled1" />
       <recent name="C:\Users\user\PycharmProjects\untitled1\static\images" />
       <recent name="C:\Users\user\PycharmProjects\untitled1\static" />
     </key>
@@ -86,12 +130,23 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>196</line>
+          <line>168</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

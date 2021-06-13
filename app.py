@@ -95,26 +95,6 @@ def write():
     else:
         return redirect(url_for("login"))
 
-
-# @app.route("/write_done", methods=["GET","POST"])
-# def write_done():
-#     if request.method =='POST':
-#         title = request.args.get("title")
-#         contents = request.args.get("contents")
-#         uid = session.get("uid")
-#         file = request.args.get("file")
-#
-#     DB.write_post(title, contents,file, uid)
-#     return redirect(url_for("index"))
-
-# @app.route("/write_done", methods=["GET"])
-# def write_done():
-#     title = request.args.get("title")
-#     contents = request.args.get("contents")
-#     uid = session.get("uid")
-#     DB.write_post(title, contents, uid)
-#     return redirect(url_for("index"))
-
 @app.route("/write_done", methods=["POST"])
 def write_done():
     title = request.form.get("title")
@@ -128,14 +108,6 @@ def write_done():
     os.remove(temp.name)
     return redirect(url_for("index"))
 
-
-# @app.route("/write_done", methods=["POST"])
-# def write_done():
-#     title = request.form["title"]
-#     contents = request.form["contents"]
-#     uid = session.get("uid")
-#     DB.write_post(title, contents, uid)
-#     return redirect(url_for("index"))
 
 @app.route("/user/<string:uid>")
 def user_posts(uid):
@@ -157,7 +129,7 @@ def edit_post(pid):
     if user == post["uid"]:
         return render_template("edit_post.html", post=post, post_id=post_id ,user=user)
     else:
-        flash("수정 권한이 없습니다.")
+        #flash("수정 권한이 없습니다.")
         return redirect(url_for("post", pid=post_id))
 
 
@@ -190,7 +162,7 @@ def delete_post(pid):
         return redirect(url_for("post_list"))
     else:
         print("작성자가 아님")
-        flash("삭제 권한이 없습니다.")
+        #flash("삭제 권한이 없습니다.")
         return redirect(url_for("post", pid=pid))
 
 if __name__ == "__main__":
