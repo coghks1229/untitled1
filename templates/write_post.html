@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block message %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+
+{% if messages %}
+    <p>{{messages[0][1]}}</p>
+{% endif %}
+{% endwith %}
+{% endblock message %}
+{% block contents %}
+
+    <section class="breadcrumb-option spad set-bg" style="background-color: mistyrose;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+
+                        <h2>Write Post </h2>
+                        <div class="breadcrumb__links">
+                            <span>diary 작성하기</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <div class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/bk.png'); background-attachment:fixed;height:150px;">
+      <div class="overlay">
+      <div class="container">
+    </div>
+      </div>
+ </div>
+
+<section style="background-color: #FCE4EC;">
+    <br>
+<div class="write_or_edit_post"; style=" width: 80%; margin: 0% 20%;">
+    <form action="{{url_for('write_done')}}" method="POST" enctype="multipart/form-data">
+                <div class="write_or_edit_post_title">
+            <input type="text" placeholder="제목" name="title" id="title"
+                style="width: 80%; height: 30px; font-size: 25px;border:  solid 2px #999" required>
+                    </div>
+        <br>
+      <div class="write_or_edit_post_contents">
+            <textarea rows="5" cols="40" placeholder="내용" name="contents" id="contents"
+                style="width: 80%; height: 300px; font-size: 15px;border:  solid 2px #999" required></textarea>
+              </div>
+        <br>
+  <div class="write_or_edit_post_file">
+            <input type="file" name="file" id="file" accept="image/*" style="background-color: #EF5350;font-size:20px;width:300px;border:  solid 2px #999">
+ </div>
+        <br>
+                    <button type="submit", style="background-color: #EF5350; border-top-left-radius:10px;
+border-bottom-left-radius:10px;border-top-right-radius:10px;
+ border-bottom-right-radius:10px;font-size:20px;width:300px">작성</button><br><br><br>
+    </form>
+</div>
+</section>
+{% endblock contents %}

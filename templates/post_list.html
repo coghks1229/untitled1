@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block message %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item active"><a href="{{url_for('post_list')}}" class="nav-link">글 목록 보기</a></li>
+            </ul>
+
+  </div>
+</nav>
+{% endblock message %}
+
+
+{% block contents %}
+
+    <section class="breadcrumb-option spad set-bg" style="background-color: mistyrose;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+
+                        <h2>ALL POSTS</h2>
+                        <div class="breadcrumb__links">
+
+                            <span>모든 유저가 작성한 글 목록 볼 수 있습니다</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <div class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/bk.png'); background-attachment:fixed;height:150px;">
+      <div class="overlay">
+      <div class="container">
+
+    </div>
+      </div>
+ </div>
+
+<section style="background-color: #FCE4EC;">
+<div class="col-lg-4 order-lg-1">
+                    <div class="services__sidebar">
+                        <div class="services__accordion">
+                            <div class="services__title">
+                                <br>
+                                <h3 style="text-align:center"><img src="../static/images/services-icon.png" alt="">작성자의 ID && TITLE</h3>
+                            </div>
+
+                        <div class="accordion" id="accordionExample">
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            {% if length ==0 %}
+                                             <p>작성된 포스트가 없습니다</p>
+                                            {% else %}
+                                             {% for post in post_list %}
+                                            <ul style="width : 1200px">
+                                                <li style="float: left; text-align:center;
+                                                width: 1200px; height: 40px;border-bottom:solid 2px #999;  list-style:none;
+                                                font-size:20px;">
+                                                    <a href="{{url_for('post',  pid=post[0])}}">
+                                                      <div>
+                                                          <p>{{post[1].uid}} && {{post[1].title}}</p>
+
+
+                                                </div>
+                                                </a>
+                                                </li>
+
+
+                                            </ul>
+
+    <br><br>
+                                            {% endfor %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+
+                        </div>
+                        </div>
+                    </div>
+
+</div>
+
+
+</section>
+
+
+{% endblock contents %}
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+

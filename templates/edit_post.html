@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block message %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+
+{% if messages %}
+    <p>{{messages[0][1]}}</p>
+{% endif %}
+{% endwith %}
+{% endblock message %}
+
+{% block contents %}
+ <section class="breadcrumb-option spad set-bg" style="background-color: mistyrose;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+
+                        <h2>게시물 수정</h2>
+                        <div class="breadcrumb__links">
+
+                            <span>게시물을 수정해주세요</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <div class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/bk.png'); background-attachment:fixed;height:150px;">
+      <div class="overlay">
+      <div class="container">
+    </div>
+      </div>
+ </div>
+<section style="background-color: #FCE4EC;">
+    <br><br>
+<div class="write_or_edit_post"; style=" width: 75%; margin: 0% 20%;">
+    <form action="{{url_for('edit_done',pid=post_id)}}" method="POST" enctype="multipart/form-data">
+        <div class="write_or_edit_post_title">
+            <input type="text" value="{{post.title}}" name="title" id="title"
+                style="width: 90%; height: 30px; font-size: 25px; border:  solid 2px #999" required>
+        </div>
+        <br>
+        <div class="write_or_edit_post_contents">
+            <textarea rows="5" cols="40" name="contents" id="contents"
+                style="width: 90%; height: 300px; font-size: 15px; border:  solid 2px #999" required>{{post.contents}}</textarea>
+        </div>
+        <br>
+        <div class="write_or_edit_post_file">
+            <h6>현재 이미지:{{post_id}}(image/*)</h6>
+            <input type="file" name="file" id="file" accept="image/*"  style="background-color: #EF5350;
+            font-size:20px;width:300px;border:  solid 2px black">
+        </div>
+        <br>
+            <button type="submit", style="background-color: #EF5350; border-top-left-radius:10px;
+border-bottom-left-radius:10px;border-top-right-radius:10px;
+ border-bottom-right-radius:10px;font-size:20px;width:300px"><b>EDIT</b></button>
+    </form>
+    <br><br>
+</div>
+</section>
+{% endblock contents %}

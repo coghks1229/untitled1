@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block message %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+
+{% if messages %}
+    <p>{{messages[0][1]}}</p>
+{% endif %}
+{% endwith %}
+ <section class="breadcrumb-option spad set-bg" style="background-color: mistyrose;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2><b>LOG IN</b></h2>
+                         <div class="breadcrumb__links">
+
+                            <span>로그인 이후 서비스 이용 가능합니다</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock message %}
+{% block contents %}
+
+
+
+ <div class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/bk.png'); background-attachment:fixed;height:150px;">
+      <div class="overlay">
+      <div class="container">
+
+      </div>
+          </div>
+    </div>
+<section style="background-color: #FCE4EC;">
+<div style="    text-align: left;
+    margin-right: 45%;
+    margin-left: 38%;
+    padding-top: 20px;
+    padding-left: 10px
+    padding-bottom: 20px;
+">
+    <form action="{{url_for('login_done')}}"  method="get">
+    <p style="font-size:20px">userid: </p>
+    <input type="text" name="id" id="id" style="width:300px;font-size:20px;width:300px;font-size:20px;border-top-left-radius:10px;
+border-bottom-left-radius:10px;border-top-right-radius:10px;
+ border-bottom-right-radius:10px;  ">
+    <p style="font-size:20px">password: </p>
+    <input type="password" name="pwd" id="pwd"  style="width:300px;font-size:20px;width:300px;font-size:20px;border-top-left-radius:10px;
+border-bottom-left-radius:10px;border-top-right-radius:10px;
+ border-bottom-right-radius:10px; ">
+    <br>
+    <br>
+    <button type="submit", style="background-color: skyblue; border-top-left-radius:10px;
+border-bottom-left-radius:10px;border-top-right-radius:10px;
+ border-bottom-right-radius:10px;font-size:20px;width:300px">로그인</button>
+</form>
+</div>
+    <br>
+</section>
+
+
+<div class="hero-wrap" style="background-image: url('../static/images/bk.png'); background-attachment:fixed;">
+    <div class="overlay"></div>
+    <div class="container">
+    <h1 style="color:black; font-size:100px">WELCOME TO CHAEHWAN's DIARY<br></h1>
+
+    </div>
+</div>
+
+
+
+{% endblock contents %}
